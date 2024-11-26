@@ -1,0 +1,73 @@
+//PASSO A PASSO - MVC (BIBLIOTEC)
+
+1- Criar o banco de dados 
+
+2 - Criar pasta BibliotecMVC
+
+3 - Criar projeto MVC, com o comando: dotnet new mvc -o Bibliotec
+
+4 - Abrir uma pasta em uma nova janela: code -r Bibliotec
+
+5 - Instalar o certificado de segurança dentro do projeto:
+dotnet dev-certs https --trust
+
+6 - Instalar dois pacotes do EFCore:
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+7 - Apagar o que estiver dentro de:
+	Index.cshtml
+	Shared/_Layout.cshtml.css
+
+8 - Baixar as imagens da Bibliotec no projeto MVC e colocar na pasta wwwroot
+
+9 - Na pasta wwwroot/ js renomeie o arquivo site.js para: index.js
+
+10 -  Iremos criar dentro da pasta Bibliotec a pasta Contexts
+
+11 - Dentro da pasta Contexts iremos criar uma classe chamada Contexts.cs
+
+12 - Criar dentro da pasta Models 6 classes:
+	- Categoria (ok)
+	- Curso (ok)
+	- Livro (ok)
+	- Usuario (ok)
+	- LivroCategoria (ok)
+	- LivroReserva (ok)
+
+13 - Vamos alterar o nosso html "padrão", o _Layout.cshtml
+
+---------------------------------------------------------------------------------------------------------------------------
+
+14 - Criar dentro da pasta Views a pasta Login
+
+15 - Dentro da pasta Login, criar dois arquivos:
+	Index.cshtml
+	Index.cshtml.css
+
+Obs.: O nome do html e do css devem ser os mesmos 
+
+16 - Criar dentro da pasta Views a pasta Livro
+
+17 - Criar dentro da pasta Livro os seguintes arquivos:
+	1. Index.cshtml
+	2. Index.cshtml.css
+	3. Detalhes.cshtml
+	4. Detalhes.cshtml.css
+	5. Cadastro.cshtml
+	6. Cadastro.cshtml.css
+	7. Editar.cshtml
+	8. Editar.cshtml.css
+
+18 - Criar dentro da pasta Views a pasta Usuário (sem acento)
+
+19 - Criar dentro da pasta Usuário os seguintes arquivos:
+	1. Index.cshtml
+	2. Index.cshtml.css
+
+20 - Criar um objeto da classe Context
+
+21 - Criar método de Login dentro da LoginController
+	Email e Senha
+	
+
